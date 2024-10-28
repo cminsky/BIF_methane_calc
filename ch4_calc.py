@@ -53,7 +53,7 @@ with col2:
 with col3:
     atmos_pressure = st.slider(label='Atmospheric pressure relative to modern',
                             min_value=0.,max_value=1.1,value=d_atmos_pressure,
-                            help='Range from Catling et al. 2020')
+                            help='Range from Catling \& Zahnle 2020')
     NA = 1.87e20 # moles air in the atmosphere
         # Charlotte says just trust me bro (1 atm times Earth surface area)
     
@@ -66,4 +66,4 @@ with col3:
 CH4_ppm = CH4_moles/air_moles*1e6
 f"[CH4] = {CH4_ppm:,.0f} ppm"
 
-st.caption("Compare to baseline Archean [CH4] estimate: 100-10,000 ppm (Catling et al. 2020)")
+st.caption("Compare to baseline Archean [CH4] estimate: 100-10,000 ppm (Catling \& Zahnle 2020)")
