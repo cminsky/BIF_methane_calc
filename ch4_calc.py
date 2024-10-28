@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 
-state = st.radio(label='Set parameters',
+state = st.radio(label='Set defaults',
                  options=['Min','Mid','Max'],
                  index = 1,
                  horizontal=True)
